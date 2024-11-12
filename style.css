@@ -1,0 +1,58 @@
+:root{
+    
+--White: hsl(0, 0%, 100%);
+
+--Slate300: hsl(212, 45%, 89%);
+--Slate500: hsl(216, 15%, 48%);
+--Slate900: hsl(218, 44%, 22%);
+}
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 100 to 900 */
+
+.outfitFontClass {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Slate300);
+    text-align: center;
+    font-size: 15px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    max-width: 19rem;
+    padding: 1rem 1rem 40px 1rem;
+    background-color:white;
+
+    h1{
+        font-weight: 700;
+        margin: 0;
+        font-size: 22px;
+        color: var(--Slate900);
+    }
+    p{
+        color:var(--Slate500);
+        margin-bottom: 0;
+    }
+}
+.card__QRCode{
+     height: 100%;/*288px; */
+     width:100%; /*288px; */
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.card_BRadius2rem{
+    border-radius: 20px;
+}
+.card__TextBox{
+    padding: 0px 16px 0px 16px;
+}
